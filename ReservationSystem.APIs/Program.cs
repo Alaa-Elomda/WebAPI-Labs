@@ -1,6 +1,6 @@
 using ReservationSystem.DAL;
-using ReservationSystem.BL;
 using Microsoft.EntityFrameworkCore;
+using ReservationSystem.BL;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,12 +29,14 @@ builder.Services.AddDbContext<ReservationSystemContext>(options =>
 
 builder.Services.AddScoped<IDepartmentsRepo, DepartmentsRepo>();
 builder.Services.AddScoped<ITicketsRepo, TicketsRepo>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 #endregion
 
 #region Managers
 
 builder.Services.AddScoped<ITicketsManager, TicketsManager>();
+builder.Services.AddScoped<IDepartmentsManager, DepartmentsManager>();
 
 #endregion
 

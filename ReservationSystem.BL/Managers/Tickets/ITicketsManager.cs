@@ -1,6 +1,4 @@
-﻿
-
-using ReservationSystem.BL.Dots;
+﻿using ReservationSystem.BL.Dots;
 
 namespace ReservationSystem.BL;
 

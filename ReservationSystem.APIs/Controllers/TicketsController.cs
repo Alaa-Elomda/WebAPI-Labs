@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ReservationSystem.BL;
 using ReservationSystem.BL.Dots;
+using ReservationSystem.BL;
 
 namespace ReservationSystem.APIs.Controllers;
 

@@ -31,10 +31,9 @@ public class UsersController : ControllerBase
         {
             return NoContent();
         }
-        else
-        {
-            return BadRequest();
-        }
+        
+        return BadRequest();
+        
     }
 
     [HttpPost]
@@ -48,10 +47,9 @@ public class UsersController : ControllerBase
             var employee = result.Data;
             return NoContent();
         }
-        else
-        {
-            return BadRequest();
-        }
+
+        return BadRequest();
+        
     }
 
 

@@ -18,7 +18,6 @@ public class DataController : ControllerBase
     }
 
     [HttpGet]
-    [Authorize]
     public async Task<ActionResult> GetUserInfo()
     {
         Employee? user = await _userManager.GetUserAsync(User);
